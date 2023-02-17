@@ -1,14 +1,7 @@
 {
 	const tasks = [
-		{
-			content: " Pograj w Cs'a",
-			done: true,
-		},
-		{
-			content: "Poucz się programować",
-			done: false,
-		},
-	]
+        
+    ]
 
 	const taskRemove = index => {
 		tasks.splice(index, 1)

@@ -1,7 +1,7 @@
 # To do list
 ## Description
 
-
+This site helps you to write down your tasks. After you make it you can cross your task or deleate.
 
 ## Demo
 
