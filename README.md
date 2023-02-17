@@ -7,7 +7,7 @@ This site helps you to write down your tasks. After you make it you can cross yo
 
 [To do list](https://mombil.github.io/to_do_list/)
 
-![Demo photo](images/demo.png)
+![Demo photo](Images/demo.png)
 
 ## Technologies
 - Grid
