@@ -10,6 +10,12 @@
         }
     ]
 
+    const addNewContent = (newTask) => {
+        tasks.push({
+            content : newTask,
+        }) 
+    }
+
     const render = () => {
         let htmlString = ""
         for (const task of tasks) {
@@ -22,23 +28,27 @@
         document.querySelector(".js-listTasks").innerHTML = htmlString
     }
 
+    const onFormSubmit = (event) => {
+        event.preventDefault()
+
+        newTask = document.querySelector(".js-addTaskInput").value.trim()
+        
+        if (!newTask){
+            return
+        }
+
+        addNewContent(newTask)
+        
+   
+        
+        render()
+    }
+
     const addNewTask = () => {
         form = document.querySelector(".js-form")
 
         form.addEventListener("submit", (event) => {
-            event.preventDefault()
-
-            newTask = document.querySelector(".js-addTaskInput").value.trim()
-            
-            if (!newTask){
-                return
-            }
-
-            tasks.push({
-                content : newTask,
-            }) 
-            
-            render()
+            onFormSubmit(event)
         })
     } 
 
