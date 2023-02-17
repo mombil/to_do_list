@@ -42,6 +42,14 @@
     padding: 10px;
 }
 
+.form__button:hover {
+    background-color: hsl(180, 100%, 30%);
+}
+
+.form__button:active {
+    background-color: hsl(180, 100%, 40%);
+}
+
 @media (max-width: 500px) {
     .form__button {
         flex-grow: 1;
