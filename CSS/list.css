@@ -1,0 +1,23 @@
+.list__item{
+    display: grid;
+    justify-content: flex-start;
+    grid-template-columns: auto 1fr auto;
+    border-bottom: 1px #ddd solid;
+    margin-bottom: 10px;
+    padding: 5px;
+}
+
+.list__button {
+    border: none;
+    cursor: pointer;
+    color: white;
+}
+
+.list__button--done {
+    background-color: chartreuse;
+}
+
+.list__button--remove{
+    background-color: red;
+    
+}

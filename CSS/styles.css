@@ -7,3 +7,10 @@ html {
 ::before {
 	box-sizing: inherit;
 }
+
+.body {
+	max-width: 1000px;
+	background-color: #ddd;
+	margin: auto;
+	font-family: "Lato", sans-serif;
+}

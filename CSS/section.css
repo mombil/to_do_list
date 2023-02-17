@@ -1,0 +1,10 @@
+.section__list{
+    list-style: none;
+}
+
+.section__item {
+    background-color: white;
+    padding: 15px;
+    margin: 0px;
+}
+
