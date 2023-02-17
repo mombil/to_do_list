@@ -14,3 +14,9 @@ html {
 	margin: auto;
 	font-family: "Lato", sans-serif;
 }
+
+@media (max-width: 1200px) {
+	.body {
+		max-width: 90%;
+	}
+}

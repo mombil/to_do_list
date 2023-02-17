@@ -1,42 +1,48 @@
-.list__item{
-    display: grid;
-    justify-content: flex-start;
-    grid-template-columns: auto 1fr auto;
-    border-bottom: 1px #ddd solid;
-    margin-bottom: 10px;
-    padding: 5px;
+.list__item {
+	display: grid;
+	justify-content: flex-start;
+	grid-template-columns: auto 1fr auto;
+	border-bottom: 1px #ddd solid;
+	margin-bottom: 10px;
+	padding: 5px;
+}
+
+.list__text {
+	text-decoration: line-through;
+	word-break: break-word;
+	text-align: justify;
 }
 
 .list__button {
-    border: none;
-    cursor: pointer;
-    color: white;
-    margin-right: 5px;
+	border: none;
+	cursor: pointer;
+	color: white;
+	margin-right: 5px;
+	width: 20px;
+	height: 20px;
+	padding: 1px;
 }
 
 .list__button--done {
-    background-color: hsl(90, 100%, 35%);
+	background-color: hsl(90, 100%, 35%);
 }
 
 .list__button--done:hover {
-    background-color: hsl(90, 100%, 40%);
+	background-color: hsl(90, 100%, 40%);
 }
 
 .list__button--done:active {
-    background-color: hsl(90, 100%, 50%);
+	background-color: hsl(90, 100%, 50%);
 }
 
-.list__button--remove{
-    background-color: hsl(0, 100%, 45%);
-    
+.list__button--remove {
+	background-color: hsl(0, 100%, 45%);
 }
 
-.list__button--remove:hover{
-    background-color: hsl(0, 100%, 55%);
-    
+.list__button--remove:hover {
+	background-color: hsl(0, 100%, 55%);
 }
 
-.list__button--remove:active{
-    background-color: hsl(0, 100%, 65%);
-    
+.list__button--remove:active {
+	background-color: hsl(0, 100%, 65%);
 }
