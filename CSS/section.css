@@ -1,3 +1,7 @@
+.section {
+	box-shadow: 0 0 5px #ddd ;
+}
+
 .section__list {
 	list-style: none;
 }
@@ -5,5 +9,9 @@
 .section__item {
 	background-color: white;
 	padding: 15px;
-	margin: 0px;
+	margin: 0;
+}
+
+.section__header {
+	margin: 0;
 }

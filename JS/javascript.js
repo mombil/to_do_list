@@ -6,7 +6,7 @@
 		render();
 	};
 
-	const taskDone = index => {
+	const taskToggleDone = index => {
 		tasks[index].done = !tasks[index].done;
 		render();
 	};
@@ -22,16 +22,18 @@
 		for (const task of tasks) {
 			htmlString += `
             <li class="list__item ">
-            <button class="js-done list__button list__button--done">${
-							task.done ? "✔" : ""
-						}</button>
-            <span class="${task.done ? " list__text" : ""}">${
-				task.content
-			}</span>
-            <button class="js-remove list__button list__button--remove">🗑</button>
+            	<button class="js-toggleDone list__button list__button--done">
+					${task.done ? "✔" : ""}
+				</button>
+            	<span class="${task.done ? " list__text" : ""}">
+					${task.content}
+				</span>
+            	<button class="js-remove list__button list__button--remove">
+					🗑
+				</button>
             </li>
             `;
-		};
+		}
 		document.querySelector(".js-listTasks").innerHTML = htmlString;
 
 		removeButtons = document.querySelectorAll(".js-remove");
@@ -42,11 +44,11 @@
 			});
 		});
 
-		doneButtons = document.querySelectorAll(".js-done");
+		doneButtons = document.querySelectorAll(".js-toggleDone");
 
 		doneButtons.forEach((doneButtons, index) => {
 			doneButtons.addEventListener("click", () => {
-				taskDone(index);
+				taskToggleDone(index);
 			});
 		});
 	};
@@ -63,15 +65,14 @@
 
 		newTask = document.querySelector(".js-addTaskInput").value.trim();
 
-		if (!newTask) {
-			return;
-		};
-
-		addNewContent(newTask);
-
-		cleanInput();
 		autoFocus();
 
+		if (!newTask) {
+			return;
+		}
+
+		addNewContent(newTask);
+		cleanInput();
 		render();
 	};
 

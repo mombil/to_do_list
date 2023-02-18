@@ -1,15 +1,15 @@
 .list__item {
 	display: grid;
-	justify-content: flex-start;
 	grid-template-columns: auto 1fr auto;
 	border-bottom: 1px #ddd solid;
 	margin-bottom: 10px;
 	padding: 5px;
+	word-break: break-word;
+	align-items: center;
 }
 
 .list__text {
 	text-decoration: line-through;
-	word-break: break-word;
 	text-align: justify;
 }
 
@@ -18,29 +18,29 @@
 	cursor: pointer;
 	color: white;
 	margin-right: 5px;
-	width: 20px;
-	height: 20px;
+	width: 30px;
+	height: 30px;
 	padding: 1px;
 }
 
 .list__button--done {
-	background-color: hsl(90, 100%, 35%);
+	background-color: hsl(120, 100%, 25%);
 }
 
 .list__button--done:hover {
-	background-color: hsl(90, 100%, 40%);
+	background-color: hsl(120, 100%, 35%);
 }
 
 .list__button--done:active {
-	background-color: hsl(90, 100%, 50%);
+	background-color: hsl(120, 100%, 40%);
 }
 
 .list__button--remove {
-	background-color: hsl(0, 100%, 45%);
+	background-color: hsl(0, 100%, 50%);
 }
 
 .list__button--remove:hover {
-	background-color: hsl(0, 100%, 55%);
+	background-color: hsl(0, 100%, 60%);
 }
 
 .list__button--remove:active {
