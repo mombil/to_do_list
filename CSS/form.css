@@ -30,7 +30,7 @@
 	border: none;
 	cursor: pointer;
 	padding: 10px;
-	transition: 0.7s;
+	transition: 0.4s;
 }
 
 .form__button:hover {
