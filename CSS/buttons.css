@@ -1,0 +1,25 @@
+.buttons {
+	display: grid;
+	grid-template-columns: auto auto;
+}
+
+@media (max-width: 768px) {
+	.buttons {
+		grid-template-columns: auto;
+		justify-content: center;
+	}
+}
+
+.buttons__button {
+	background-color: white;
+	padding: 15px;
+	margin: 0;
+	border: none;
+	cursor: pointer;
+	color: teal;
+	font-size: 20px;
+}
+
+.buttons__button:disabled {
+	color: grey;
+}
