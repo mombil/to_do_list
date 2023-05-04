@@ -18,6 +18,15 @@
 	cursor: pointer;
 	color: teal;
 	font-size: 20px;
+	transition: 0.7s;
+}
+
+.buttons__button:hover {
+	color: hsl(180, 100%, 30%);
+}
+
+.buttons__button:active {
+	color: hsl(180, 100%, 40%);
 }
 
 .buttons__button:disabled {
