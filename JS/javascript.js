@@ -9,14 +9,15 @@
 	};
 
 	const taskToggleDone = index => {
-		tasks = [
-			...tasks.slice(0, index),
-			{
-				...tasks[index],
-				done: !tasks[index].done,
-			},
-			...tasks.slice(index + 1),
-		];
+		let targetIndex = index
+			tasks = tasks.map((task, index) => {
+			if (index === targetIndex) {
+				return { ...task, done: !task.done };
+			} else {
+				return task;
+			}
+		  });
+		  
 		render();
 	};
 
@@ -80,7 +81,7 @@
 				>
 					Ukończ wszystkie
 				</button>
-			`;
+				`;
 			document.querySelector(".js-buttons").innerHTML = htmlString;
 		} else {
 			document.querySelector(".js-buttons").innerHTML = "";
