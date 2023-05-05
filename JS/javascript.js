@@ -52,15 +52,15 @@
 			htmlString += `
 				<li class="list__item 
 				${hideDoneTasks && task.done ? "list__item--hide" : ""}">
-				<button class="js-toggleDone list__button list__button--done">
-					${task.done ? "✔" : ""}
-				</button>
-				<span class="${task.done ? " list__text" : ""}">
-					${task.content}
-				</span>
-				<button class="js-remove list__button list__button--remove">
-					🗑
-				</button>
+					<button class="js-toggleDone list__button list__button--done">
+						${task.done ? "✔" : ""}
+					</button>
+					<span class="${task.done ? " list__text" : ""}">
+						${task.content}
+					</span>
+					<button class="js-remove list__button list__button--remove">
+						🗑
+					</button>
 				</li>
 			`;
 		}
