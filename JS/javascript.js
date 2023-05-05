@@ -9,15 +9,15 @@
 	};
 
 	const taskToggleDone = index => {
-		let targetIndex = index
-			tasks = tasks.map((task, index) => {
+		let targetIndex = index;
+		tasks = tasks.map((task, index) => {
 			if (index === targetIndex) {
 				return { ...task, done: !task.done };
 			} else {
 				return task;
 			}
-		  });
-		  
+		});
+
 		render();
 	};
 
@@ -72,15 +72,16 @@
 	const renderButtons = () => {
 		if (tasks.length >= 1) {
 			let htmlString = "";
-			htmlString += `
-	 			<button class="js-buttons js-hideDoneButton buttons__button">
-					${hideDoneTasks ? "Pokaż ukończone" : "Ukryj ukończone"}
-				</button>
-				<button class="js-buttons js-finishAll buttons__button"
-				${chekDone() ? "disabled" : ""}
-				>
-					Ukończ wszystkie
-				</button>
+			htmlString += 
+				`
+	 				<button class="js-buttons js-hideDoneButton buttons__button">
+						${hideDoneTasks ? "Pokaż ukończone" : "Ukryj ukończone"}
+					</button>
+					<button class="js-buttons js-finishAll buttons__button"
+					${chekDone() ? "disabled" : ""}
+					>
+						Ukończ wszystkie
+					</button>
 				`;
 			document.querySelector(".js-buttons").innerHTML = htmlString;
 		} else {
